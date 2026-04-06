@@ -96,7 +96,7 @@ set_state() {
 # =============================================================================
 
 log "=============================================="
-log "GMRS ID Monitor starting for node $NODE"
+log "ID Monitor starting for node $NODE"
 log "Idle timeout:    ${IDLE_TIMEOUT}s"
 log "Post-TX delay:   ${POST_TX_DELAY}s"
 log "Pending ID:      ${PENDING_ID_INTERVAL}s (15 min)"
