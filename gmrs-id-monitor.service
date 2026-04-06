@@ -1,0 +1,17 @@
+[Unit]
+Description=GMRS FCC-Compliant Station ID Monitor (Node 643931)
+After=network.target asterisk.service
+Requires=asterisk.service
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/local/bin/gmrs_id_monitor.sh
+Restart=on-failure
+RestartSec=15
+StandardOutput=journal
+StandardError=journal
+# Run as root so it can call asterisk -rx without sudo issues
+User=root
+
+[Install]
+WantedBy=multi-user.target
