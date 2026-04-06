@@ -1,8 +1,7 @@
 #!/bin/bash
 # =============================================================================
-# gmrs_id_monitor.sh
-# GMRS FCC-Compliant Station ID Monitor for ASL3
-# Node: 643931
+# id_monitor.sh
+# FCC-Compliant Station ID Monitor for ASL3
 #
 # FCC 47 CFR § 95.1751 compliance:
 #   - ID is transmitted following any transmission or series of transmissions
@@ -81,7 +80,7 @@ get_rx_keyed() {
 # =============================================================================
 
 log "=============================================="
-log "GMRS ID Monitor starting for node $NODE"
+log "ID Monitor starting for node $NODE"
 log "ID interval: ${ID_INTERVAL}s (15 min)"
 log "Poll interval: ${POLL_INTERVAL}s"
 log "Idle reset timeout: ${IDLE_TIMEOUT}s"
